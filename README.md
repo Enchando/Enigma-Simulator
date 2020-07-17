@@ -4,7 +4,7 @@
 ** Refined Enigma Simulator Guide **
 
 This file is aimed at those who know how do basic operations on their system of choice - namely opening a terminal, navigating to a file in
-the terminal, extracting files etc.
+the terminal, extracting files etc. The enigma simulator JAR file can be found in the main directory of the repository.
 
 ** Step 1 : Download Java **
 The project runs on Java 11 (11.0.7). Any version of Java 11 should work with this project, and will need to be downloaded from the Oracle website.
