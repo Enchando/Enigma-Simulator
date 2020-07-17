@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="stagePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PlugboardWindowController">
+   <left>
+      <VBox styleClass="sidebar_design" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </VBox>
+   </left>
+   <right>
+      <VBox styleClass="sidebar_design" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </VBox>
+   </right>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #121212;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Reflector: ">
+                     <font>
+                        <Font name="Courier New Bold" size="17.0" />
+                     </font>
+                  </Text>
+                  <ChoiceBox fx:id="reflectorChoice" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="plugQ" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="Q">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="plugW" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="W">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="plugE" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="E">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="plugR" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="R">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="plugT" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="T">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="plugZ" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="Z">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="plugU" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="U">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="plugI" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="I">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="plugO" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="O">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="plugA" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="A">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="plugS" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="S">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="plugD" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="D">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="plugF" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="F">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="plugG" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="G">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="plugH" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="H">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="plugJ" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="J">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="plugK" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="K">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="plugP" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="P">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="plugY" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="Y">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="plugX" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="X">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="plugC" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="C">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="plugV" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="V">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="plugB" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="B">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="plugN" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="N">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="plugM" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="M">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="plugL" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="plugboardLinkButton" text="L">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
+               </children>
+            </HBox>
+            <TextField alignment="CENTER" editable="false" style="-fx-text-fill: white; -fx-background-color: transparent;" text="Click two letters to create a plug!">
+               <font>
+                  <Font name="Courier New Bold" size="17.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox alignment="CENTER_RIGHT" styleClass="topAndBottomBar_design" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="minusPlugboard" mnemonicParsing="false" styleClass="minus">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding></Button>
+            <Button fx:id="closePlugboard" mnemonicParsing="false" styleClass="close">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding></Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></HBox>
+   </top>
+   <bottom>
+      <HBox styleClass="topAndBottomBar_design" prefHeight="20.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

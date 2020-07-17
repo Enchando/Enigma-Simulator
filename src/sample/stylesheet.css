@@ -1,0 +1,354 @@
+.enigmaBackground{
+    -fx-background-image: url("resources/images/TopBackground.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+}
+
+.keyboard-design{
+    -fx-background-radius: 100 100 100 100;
+    -fx-background-image: url("resources/images/KeyboardKey.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-min-width: 45px;
+    -fx-min-height: 45px;
+    -fx-text-fill: white;
+    -fx-font-family: "Molot";
+    -fx-font-weight: bold;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 3 3 3 3;
+    -fx-border-radius: 100 100 100 100;
+}
+
+.keyboard-design: hover{
+    -fx-cursor: hand;
+    -fx-background-radius: 100 100 100 100;
+    -fx-background-color: #242424;
+}
+
+.KeyboardBack1{
+    -fx-background-image: url("resources/images/KeyboardBack1.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+}
+
+.KeyboardBack2{
+    -fx-background-image: url("resources/images/KeyboardBack2.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+}
+
+.KeyboardBack3{
+    -fx-background-image: url("resources/images/KeyboardBack2.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+}
+
+.displayItems {
+    -fx-font-family: "Molot";
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+    -fx-border-radius: 100;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 0.5;
+    -fx-background-radius: 100;
+    -fx-background-image: url("resources/images/DisplayKey.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-radius: 100 100 100 100;
+}
+
+.labelGlow {
+     -fx-color: #fffb00;
+}
+
+.labelOff {
+    -fx-color: #ffffff;
+}
+
+.titlebar_design: hover{
+    -fx-cursor: hand;
+}
+
+.sidebar_design{
+    -fx-background-image: url("resources/images/EnigmaSides.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+}
+
+.topAndBottomBar_design{
+     -fx-background-image: url("resources/images/EnigmaTopAndBottom.png");
+     -fx-background-size: 100% 100%;
+     -fx-background-repeat: stretch;
+     -fx-background-position: center center;
+}
+
+.rotorDisplayBox{
+    -fx-background-image: url("resources/images/RotorDisplay.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-font-family: "Molot";
+    -fx-font-weight: bold;
+}
+
+.rotorDisplayBox1{
+    -fx-background-image: url("resources/images/RotorDisplay1.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-font-family: "Molot";
+    -fx-font-weight: bold;
+}
+
+.rotorDisplayBox > .label{
+    -fx-background-color: #F6F4EF;
+    -fx-text-fill: black;
+}
+
+.rotorDisplayBox1 > .label{
+    -fx-background-color: #F6F4EF;
+    -fx-text-fill: black;
+}
+
+.rotorUpArrow{
+    -fx-background-image: url("resources/images/uparrow.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-color: transparent;
+}
+
+.rotorUpArrow: hover{
+    -fx-background-image: url("resources/images/uparrowhover.png");
+    -fx-cursor: hand;
+}
+
+.rotorDownArrow{
+    -fx-background-image: url("resources/images/downarrow.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-color: transparent;
+}
+
+.rotorDownArrow: hover{
+    -fx-background-image: url("resources/images/downarrowhover.png");
+    -fx-cursor: hand;
+}
+
+.rotorBackground{
+    -fx-background-image: url("resources/images/rotorBackground.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-color: transparent;
+}
+
+.textDisplay {
+    -fx-alignment: CENTER;
+    -fx-text-fill: white;
+    -fx-font-family: "Courier New";
+    -fx-font-weight: bold;
+    -fx-font-size: 12pt;
+    -fx-background-color: #323232;
+    -fx-background-radius: 0;
+    -fx-border-color: #030303;
+    -fx-border-width: 2px;
+}
+
+.plugboardButton{
+    -fx-text-fill: white;
+    -fx-font-family: "Molot";
+    -fx-font-weight: bold;
+    -fx-font-size: 10pt;
+    -fx-background-color: #363636;
+}
+
+.plugboardButton: hover {
+    -fx-cursor: hand;
+    -fx-background-color: #666666;
+}
+
+.plugboardLinkButton {
+    -fx-font-size: 20px;
+    -fx-background-radius: 100 100 100 100;
+    -fx-background-color: #000000;
+    -fx-min-width: 30px;
+    -fx-min-height: 30px;
+    -fx-text-fill: white;
+    -fx-font-family: "Courier New";
+    -fx-font-weight: bold;
+    -fx-border-color: linear-gradient(to bottom, #ebebeb 0%,#fafafa 50%,#ebebeb 100%);
+    -fx-border-width: 2 2 2 2;
+    -fx-border-radius: 100 100 100 100;
+}
+
+.close{
+    -fx-background-image: url("resources/images/cross.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.close:hover{
+    -fx-cursor: hand;
+}
+
+.sound{
+    -fx-background-image: url("resources/images/soundon.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.sound:hover{
+    -fx-cursor: hand;
+}
+
+.minus{
+    -fx-background-image: url("resources/images/minus1.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.minus:hover{
+    -fx-cursor: hand;
+}
+
+.choice-box{
+    -fx-background-color: black;
+}
+
+.choice-box:hover{
+    -fx-cursor: hand;
+    -fx-background-color: #363636;
+}
+
+.choice-box > .label{
+    -fx-text-fill: white;
+    -fx-font-family: "Courier New";
+    -fx-font-weight: bold;
+}
+
+.choice-box .context-menu{
+    -fx-background-color: black;
+}
+
+.choice-box .menu-item:focused {
+    -fx-background-color: #121212;
+}
+
+.choice-box .menu-item > .label {
+    -fx-text-fill: white;
+}
+
+.choice-box .menu-item:focused > .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.processArea {
+    -fx-background-image: url("resources/images/Table.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.writingArea.text-area {
+    -fx-font-family: "Timothy";
+    -fx-font-size: 25px;
+    -fx-padding: 10 10 10 10;
+    -fx-background-image: url("resources/images/Paper.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+
+}
+
+.writingArea.text-area .scroll-pane .viewport,
+.writingArea.text-area .content{
+    -fx-background-color: null;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.enigmaGuidebook{
+    -fx-background-image: url("resources/images/EnigmaGuideBook.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.enigmaGuidebook: hover{
+    -fx-cursor: hand;
+    -fx-background-image: url("resources/images/EnigmaGuideBookHover.png");
+}
+
+.operatorGuidebook{
+    -fx-background-image: url("resources/images/OperatorBook.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.operatorGuidebook: hover{
+    -fx-cursor: hand;
+    -fx-background-image: url("resources/images/OperatorBookHover.png");
+}
+
+.guidebookSide{
+    -fx-background-image: url("resources/images/GuideBookSide.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+#pane{
+    -fx-background-image: url("resources/images/OpenBook.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+#operatorpane{
+    -fx-background-image: url("resources/images/OpenOperatorBook.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}

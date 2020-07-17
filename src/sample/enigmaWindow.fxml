@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="stagePane" maxHeight="700.0" maxWidth="1200.0" minHeight="700.0" minWidth="1200.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EnigmaController">
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane>
+               <left>
+                  <VBox styleClass="sidebar_design" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                  </VBox>
+               </left>
+               <right>
+                  <VBox styleClass="sidebar_design" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                  </VBox>
+               </right>
+               <bottom>
+                  <HBox alignment="CENTER" styleClass="topAndBottomBar_design" BorderPane.alignment="CENTER">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </bottom>
+               <center>
+                  <VBox styleClass="enigmaBackground" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox>
+                           <children>
+                              <HBox alignment="CENTER">
+                                 <children>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Rotors">
+                                       <font>
+                                          <Font name="Courier New Bold" size="19.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" spacing="93.0">
+                                 <children>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="4">
+                                       <font>
+                                          <Font name="Courier New Bold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+                                       <font>
+                                          <Font name="Courier New Bold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+                                       <font>
+                                          <Font name="Courier New Bold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="1">
+                                       <font>
+                                          <Font name="Courier New Bold" size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="180.0" prefWidth="540.0">
+                           <children>
+                              <HBox alignment="CENTER" spacing="10.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <HBox fx:id="rotorSlot4Image" alignment="CENTER" styleClass="rotorDisplayBox1">
+                                       <children>
+                                          <Label fx:id="rotorSlot4" style="-fx-background-color: #F6F4EF;" textOverrun="CLIP">
+                                             <padding>
+                                                <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="Courier New Bold" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </HBox>
+                                    <VBox fx:id="rotor4Background" alignment="CENTER" minWidth="-Infinity" prefHeight="141.0" prefWidth="48.0" styleClass="rotorBackground">
+                                       <padding>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </padding>
+                                       <children>
+                                          <Button fx:id="rotor4Down" mnemonicParsing="false" styleClass="rotorUpArrow" text="A" textFill="#ffffff00" textOverrun="CLIP">
+                                             <padding>
+                                                <Insets bottom="12.0" left="14.0" right="14.0" top="12.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="Courier New Bold" size="14.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Button>
+                                          <Button fx:id="rotor4Up" mnemonicParsing="false" styleClass="rotorDownArrow" text="A" textFill="#ffffff00" textOverrun="CLIP">
+                                             <padding>
+                                                <Insets bottom="12.0" left="14.0" right="14.0" top="12.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="Courier New Bold" size="14.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Button>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <HBox alignment="CENTER" styleClass="rotorDisplayBox">
+                                       <children>
+                                          <Label fx:id="rotorSlot3" style="-fx-background-color: #F6F4EF;" textOverrun="CLIP">
+                                             <padding>
+                                                <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="Courier New Bold" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </HBox>
+                                    <VBox alignment="CENTER" minWidth="-Infinity" prefHeight="141.0" prefWidth="48.0" styleClass="rotorBackground">
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </padding>
+                                       <children>
+                                          <Button fx:id="rotor3Down" mnemonicParsing="false" styleClass="rotorUpArrow" text="A" textFill="#ffffff00" textOverrun="CLIP">
+                                             <padding>
+                                                <Insets bottom="12.0" left="14.0" right="14.0" top="12.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="Courier New Bold" size="14.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Button>
+                                          <Button fx:id="rotor3Up" mnemonicParsing="false" styleClass="rotorDownArrow" text="A" textFill="#ffffff00" textOverrun="CLIP">
+                                             <padding>
+                                                <Insets bottom="12.0" left="14.0" right="14.0" top="12.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="Courier New Bold" size="14.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <HBox alignment="CENTER" styleClass="rotorDisplayBox1">
+                                       <children>
+                                          <Label fx:id="rotorSlot2" style="-fx-background-color: #F6F4EF;" textOverrun="CLIP">
+                                             <padding>
+                                                <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="Courier New Bold" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </HBox>
+                                    <VBox alignment="CENTER" minWidth="-Infinity" prefWidth="48.0" styleClass="rotorBackground">
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </padding>
+                                       <children>
+                                          <Button fx:id="rotor2Down" mnemonicParsing="false" styleClass="rotorUpArrow" text="A" textFill="#ffffff00" textOverrun="CLIP">
+                                             <font>
+                                                <Font name="Courier New Bold" size="14.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" top="5.0" />
+                                             </VBox.margin>
+                                             <padding>
+                                                <Insets bottom="12.0" left="14.0" right="14.0" top="12.0" />
+                                             </padding>
+                                          </Button>
+                                          <Button fx:id="rotor2Up" mnemonicParsing="false" styleClass="rotorDownArrow" text="A" textFill="#ffffff00" textOverrun="CLIP">
+                                             <padding>
+                                                <Insets bottom="12.0" left="14.0" right="14.0" top="12.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="Courier New Bold" size="14.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <HBox alignment="CENTER" styleClass="rotorDisplayBox">
+                                       <children>
+                                          <Label fx:id="rotorSlot1" style="-fx-background-color: #F6F4EF;" textOverrun="CLIP">
+                                             <padding>
+                                                <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="Courier New Bold" size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </HBox>
+                                    <VBox alignment="CENTER" minWidth="-Infinity" prefWidth="48.0" styleClass="rotorBackground">
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" top="5.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </padding>
+                                       <children>
+                                          <Button fx:id="rotor1Down" mnemonicParsing="false" styleClass="rotorUpArrow" text="A" textFill="#ffffff00" textOverrun="CLIP">
+                                             <padding>
+                                                <Insets bottom="12.0" left="14.0" right="14.0" top="12.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="Courier New Bold" size="14.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Button>
+                                          <Button fx:id="rotor1Up" mnemonicParsing="false" styleClass="rotorDownArrow" text="A" textFill="#ffffff00" textOverrun="CLIP">
+                                             <padding>
+                                                <Insets bottom="12.0" left="14.0" right="14.0" top="12.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="Courier New Bold" size="14.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <CheckBox fx:id="enableRotor4CBox" alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" text="Enable Rotor 4" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+                                 <font>
+                                    <Font name="Courier New Bold" size="12.0" />
+                                 </font>
+                              </CheckBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="Q" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="Q" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="W" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="W" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="E" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="E" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="R" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="R" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="T" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="T" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="Z" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="Z" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="U" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="U" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="I" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="I" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="O" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="O" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="A" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="A" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="S" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="S" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="D" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="D" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="F" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="F" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="G" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="G" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="H" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="H" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="J" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="J" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="K" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="K" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="P" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="P" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="Y" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="Y" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="X" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="X" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="C" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="C" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="V" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="V" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="B" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="B" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="N" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="N" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="M" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="M" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="L" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="48.0" prefWidth="48.0" styleClass="displayItems" stylesheets="@stylesheet.css" text="L" textFill="WHITE">
+                                 <font>
+                                    <Font name="Courier New Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #121212;" styleClass="KeyboardBack1">
+                           <children>
+                              <Button fx:id="buttonQ" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="Q" textAlignment="CENTER" userData="Q">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="buttonW" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="W" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="buttonE" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="E" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="buttonR" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="R" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="buttonT" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="T" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="buttonZ" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="Z" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="buttonU" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="U" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="buttonI" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="I" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="buttonO" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="O" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #030303;" styleClass="KeyboardBack2">
+                           <children>
+                              <Button fx:id="buttonA" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="A" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="buttonS" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="S" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="buttonD" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="D" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="buttonF" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="F" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="buttonG" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="G" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="buttonH" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="H" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="buttonJ" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="J" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="buttonK" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="K" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #000000;" styleClass="KeyboardBack3">
+                           <children>
+                              <Button fx:id="buttonP" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="P" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="buttonY" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="Y" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="buttonX" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="X" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="buttonC" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="C" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="buttonV" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="V" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="buttonB" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="B" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="buttonN" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="N" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="buttonM" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="M" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="buttonL" mnemonicParsing="false" styleClass="keyboard-design" stylesheets="@stylesheet.css" text="L" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" style="-fx-background-color: #000000;">
+                           <children>
+                              <Button fx:id="plugboardButton" mnemonicParsing="false" styleClass="plugboardButton" text="Plugboard and Reflector Settings">
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </center>
+               <top>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="599.0" styleClass="topAndBottomBar_design" BorderPane.alignment="CENTER_RIGHT">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </top>
+            </BorderPane>
+            <BorderPane fx:id="processArea" styleClass="processArea">
+               <left>
+                  <VBox prefHeight="498.0" BorderPane.alignment="CENTER" />
+               </left>
+               <right>
+                  <VBox prefHeight="498.0" BorderPane.alignment="CENTER" />
+               </right>
+               <top>
+                  <HBox alignment="CENTER_RIGHT" prefWidth="600.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" style="-fx-background-color: #5E3C1E;">
+                           <children>
+                              <Button fx:id="soundbutton" mnemonicParsing="false" prefHeight="27.0" prefWidth="29.0">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                                 </HBox.margin></Button>
+                              <Button fx:id="minus" mnemonicParsing="false" styleClass="minus">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="close" mnemonicParsing="false" styleClass="close">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children></HBox>
+               </top>
+               <bottom>
+                  <HBox prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </bottom>
+               <center>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox alignment="TOP_CENTER">
+                           <children>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Rotor Options">
+                                 <font>
+                                    <Font name="Courier New Bold" size="12.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <HBox alignment="CENTER">
+                                 <children>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="4">
+                                       <font>
+                                          <Font name="Courier New Bold" size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Region prefHeight="16.0" prefWidth="135.0" />
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+                                       <font>
+                                          <Font name="Courier New Bold" size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Region prefHeight="16.0" prefWidth="140.0" />
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+                                       <font>
+                                          <Font name="Courier New Bold" size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Region prefHeight="16.0" prefWidth="135.0" />
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="1">
+                                       <font>
+                                          <Font name="Courier New Bold" size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER">
+                                 <children>
+                                    <ChoiceBox fx:id="rotor4Choice" prefWidth="150.0" />
+                                    <ChoiceBox fx:id="rotor3Choice" prefWidth="150.0" />
+                                    <ChoiceBox fx:id="rotor2Choice" prefWidth="150.0" />
+                                    <ChoiceBox fx:id="rotor1Choice" prefWidth="150.0" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </HBox>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Ring Settings" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Courier New Bold" size="12.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="20.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <HBox alignment="CENTER">
+                                 <children>
+                                    <ChoiceBox fx:id="ringSetRotor4" prefWidth="150.0" />
+                                    <ChoiceBox fx:id="ringSetRotor3" prefWidth="150.0" />
+                                    <ChoiceBox fx:id="ringSetRotor2" prefWidth="150.0" />
+                                    <ChoiceBox fx:id="ringSetRotor1" prefWidth="150.0" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="500.0" prefWidth="599.0">
+                           <children>
+                              <TextArea fx:id="encryptionDisplay" editable="false" focusTraversable="false" prefHeight="508.0" prefWidth="395.0" promptText="Encryption will be shown here..." styleClass="writingArea" stylesheets="@stylesheet.css" wrapText="true">
+                                 <font>
+                                    <Font name="Vladimir Script" size="12.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                              </TextArea>
+                              <Region prefHeight="486.0" prefWidth="13.0" />
+                              <VBox alignment="CENTER" prefHeight="486.0" prefWidth="149.0">
+                                 <children>
+                                    <Button fx:id="enigmaGuidebookButton" mnemonicParsing="false" prefHeight="195.0" prefWidth="179.0" styleClass="enigmaGuidebook">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin></Button>
+                                    <Button fx:id="operatorGuidebookButton" layoutX="10.0" layoutY="156.0" mnemonicParsing="false" prefHeight="195.0" prefWidth="179.0" styleClass="operatorGuidebook">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox />
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Button fx:id="encryptionProcessButton" mnemonicParsing="false" prefWidth="207.0" styleClass="plugboardButton" text="Show encryption process">
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="clearButton" alignment="CENTER_RIGHT" mnemonicParsing="false" styleClass="plugboardButton" text="Clear ">
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Region prefHeight="30.0" prefWidth="150.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
